@@ -2,8 +2,10 @@
 <html lang="en">
 <title>Alfonso Gauna</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Alfonso Gauna — Economics PhD Student at UChicago.">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,6 +23,7 @@ img {
   margin-right: auto;
   width: 50%;
 }
+a:hover { color: #0b5394; text-decoration: underline; }
 </style>
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
 
@@ -46,28 +49,25 @@ img {
     <!-- <p class="w3-opacity"><i>Economist</i></p> -->
     <h4 class="w3-justify">
 
-      <br>I am a Economics PhD Student in The Kenneth C. Griffin Department of Economics at The University of Chicago. I earned a BA and MA, both in Economics, from Universidad Torcuato di Tella.</br>
-      <br>My research interests lie in the intersection of Macroeconomic Theory, Finance, and International Economy. I have been working on topics related to small open economies, the role of expectations in macroeconomics, labor issues, and sovereign debt in Latin American countries.</br>
-      <br>You can contact me at <a href="mailto:gauna@uchicago.edu" target="_blank">gauna@uchicago.edu</a>, and find my CV <a href="https://www.dropbox.com/scl/fi/9bng3pc7zs0wxral4wdqa/CV_Gauna.pdf?rlkey=iei7il3hqo7mdmf1jz0gezwug&raw=1" target="_blank">here</a>.</br>
+      <p>I am a Economics PhD Student in The Kenneth C. Griffin Department of Economics at The University of Chicago. I earned a BA and MA, both in Economics, from Universidad Torcuato di Tella.</p>
+      <p>My research interests lie in the intersection of Macroeconomic Theory, Finance, and International Economy. I have been working on topics related to small open economies, the role of expectations in macroeconomics, labor issues, and sovereign debt in Latin American countries.</p>
+      <p>You can contact me at <a href="mailto:gauna@uchicago.edu" target="_blank">gauna@uchicago.edu</a>, and find my CV <a href="https://www.dropbox.com/scl/fi/9bng3pc7zs0wxral4wdqa/CV_Gauna.pdf?rlkey=iei7il3hqo7mdmf1jz0gezwug&raw=1" target="_blank">here</a>.</p>
 
-  <br>
+  <p>
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
-    <img src="images/Córdoba.png" style="width:70%">
+    <img src="images/Córdoba.png" style="width:70%" alt="Córdoba, Argentina">
     <p class="w3-opacity"><i>Córdoba, Argentina
-    <!--   <br>2000 - 2017 -->
     </i></p>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="images/Buenos Aires.png" style="width:70%">
+    <img src="images/Buenos Aires.png" style="width:70%" alt="Buenos Aires, Argentina">
     <p class="w3-opacity"><i>Buenos Aires, Argentina
-    <!--   <br>2018 - 2024-->
     </i></p>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="images/Chicago.png" style="width:70%">
+    <img src="images/Chicago.png" style="width:70%" alt="Chicago, Illinois">
     <p class="w3-opacity"><i>Chicago, Illinois
-    <!--  <br> 2024 - present -->
    </i></p>
   </div>
   
@@ -76,13 +76,14 @@ img {
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" style="margin-top: auto;">
-    <button class="w3-button" onclick="window.open('https://twitter.com/fongauna', '_blank')" title="X (formerly Twitter)">
+    <button class="w3-button" onclick="window.open('https://twitter.com/fongauna', '_blank')" title="X (formerly Twitter)" aria-label="X (formerly Twitter)">
     <svg class="w3-hover-opacity" style="width:24px;height:24px;vertical-align:middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
       <path d="M461.5 32h-83.7L256 214.4 134.2 32H50l176.4 251L50 480h83.7l121.8-174.7L377.8 480H462L285.6 229.2 461.5 32z"/>
     </svg>
   </button>
-  <button class="w3-button" onclick="window.open('https://github.com/AlfonsoGauna', '_blank')" title="GitHub"><i class="fa fa-github w3-hover-opacity"></i>
-  <button class="w3-button" onclick="window.open('https://linkedin.com/in/alfonsogauna', '_blank')" title="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i>
+  <button class="w3-button" onclick="window.open('https://github.com/AlfonsoGauna', '_blank')" title="GitHub" aria-label="GitHub"><i class="fa fa-github w3-hover-opacity"></i>
+</button>
+  <button class="w3-button" onclick="window.open('https://linkedin.com/in/alfonsogauna', '_blank')" title="LinkedIn" aria-label="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
 
 <script>
@@ -100,7 +101,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3500);    
+  setTimeout(carousel, 2500);    
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button

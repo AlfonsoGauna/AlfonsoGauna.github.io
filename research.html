@@ -1,96 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Alfonso Gauna</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Alfonso Gauna — Economics PhD Student at UChicago.">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-a:hover { color: #0b5394; text-decoration: underline; }
-</style>
+<head>
+  <title>Alfonso Gauna — Research</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research by Alfonso Gauna — working papers, publications, and other work in macroeconomics, finance, and international economics.">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {font-family: "Lato", sans-serif}
+    a:hover { color: #1f6feb; text-decoration: underline; }
+
+    :root {
+      --bg: rgb(246, 248, 250);
+      --txt: #1f2937;
+      --muted: #6b7280;
+      --brand: #607d8b;
+      --accent: #1f6feb;
+      --card: #ffffff;
+      --radius: 16px;
+    }
+
+    html, body { background: var(--bg); color: var(--txt); }
+    body { font-family: "Inter", "Lato", sans-serif; line-height: 1.6; }
+
+    .main-wrap { max-width: 900px; margin: 0 auto; padding: 40px 16px 32px; }
+    .hero {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .hero h1 { font-weight: 800; letter-spacing: -0.01em; margin-top: 0; }
+    .section-title {
+      margin: 24px 0 10px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--txt);
+      background: #eef2f7;
+      padding: 8px 12px;
+      border-radius: 10px;
+      display: inline-block;
+      letter-spacing: 0.2px;
+    }
+
+    .footer-icons { display: inline-flex; gap: 10px; align-items: center; }
+    .icon-btn {
+      width: 38px; height: 38px; border-radius: 50%; display: inline-grid; place-items: center;
+      background: #fff; border: 1px solid #e5e7eb;
+      transition: transform .12s, box-shadow .12s, border-color .12s;
+    }
+    .icon-btn:hover { transform: translateY(-1px); border-color: var(--accent); box-shadow: 0 6px 18px rgba(31,111,235,0.12); }
+
+    /* Floating Home FAB */
+    .fab-home{
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      text-decoration: none;
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+      z-index: 1000;
+    }
+    .fab-home:hover{
+      transform: translateY(-1px);
+      border-color: #1f6feb;
+      box-shadow: 0 14px 28px rgba(31,111,235,0.18);
+    }
+    .fab-home i{ font-size: 20px; }
+    @media (max-width: 480px){
+      .fab-home{ right: 14px; bottom: 14px; width: 48px; height: 48px; }
+    }
+  </style>
+</head>
+
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-blue-grey w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    </div>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="research.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research</a>
-</div>
-
-  <!-- Main section-->
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="band">
-      <h2 class="w3-wide w3-text-blue-grey">Alfonso Gauna - Research</h2>
-      <h4 class="w3-wide w3-light-grey" >Working Papers</h4>
-
-    <h4> "<u><a href="https://www.dropbox.com/scl/fi/0tyv86u8nktpz68kdnmwq/ModelsBoPCrisis.pdf?rlkey=eiy79w5jj01qu0ri3kepsf8f4&st=s7itdn9r&raw=1" target="_blank">Models of Balance of Payments Crises with Capital Controls</a></u>" with Emilio Espino and Andy Neumeyer</h4>
+<div class="main-wrap">
+  <section class="hero w3-animate-opacity">
+    <h1 class="w3-text-blue-grey" style="text-align:center;">Alfonso Gauna – Research</h1>
+    <h3 class="w3-wide w3-text-blue-grey">Working Papers</h3>
+    <h4>"<u><a href="https://www.dropbox.com/scl/fi/0tyv86u8nktpz68kdnmwq/ModelsBoPCrisis.pdf?rlkey=eiy79w5jj01qu0ri3kepsf8f4&amp;st=s7itdn9r&amp;raw=1" target="_blank">Models of Balance of Payments Crises with Capital Controls</a></u>"<br> with Emilio Espino and Andy Neumeyer</h4>
     <h5><b>Abstract:</b> 
-    We examine techniques to delay the collapse of unsustainable fixed exchange rates caused by excessive domestic credit growth. Capital controls, combined with free trade, postpone the collapse, resulting in a trade deficit and consumption boom. Real interest rates rise above international levels, and reserves depletion triggers anticipated devaluation. Delaying monetization while maintaining fiscal policy prolongs low inflation, but leads to higher inflation later. Introducing import restrictions alongside capital controls sustains the fixed exchange rate but misallocates resources, creating a wedge between domestic and international prices. This wedge, worsened by excessive money supply expansion, leads to no exports.</h5>
-
-  <h4 class="w3-wide w3-light-grey" >Publications</h4>
-
-    <h4> "<u><a href="https://doi.org/10.31389/eco.450" target="_blank">What Works for Active Labor Market Policies? A Meta-Analysis of RCT Findings</a></u>" with E. Levy Yeyati, M. Montané, and L. Sartorio</h4>
-    
-    <h4 class="w3-wide w3-light-grey" >Other work</h4>
-
-    <h4> "<u><a href="https://www.dropbox.com/scl/fi/h9lumfpa14nuanfvsabtz/GaunaJudzikYeyati2021_ICL.pdf?rlkey=fo0iymgpz4ds2o1436io7e4mf&raw=1" target="_blank">Labor conflict and sectoral wage setting in Argentina</a></u>" with Dario Judzik and Eduardo Levy Yeyati</h4>
-
-    <h4> "<u><a href="https://www.dropbox.com/scl/fi/g7grh2tdltycjw9b10y5s/A-Rent-Seeking-Coalition-and-Efficiency-Losses.pdf?rlkey=urio3ynsbql23e1c69lsuel22&raw=1" target="_blank">A Rent-Seeking Coalition and Efficiency Losses</a></u>" Undergraduate thesis</h4>
-</h5>
-    </div>
-  </div>
-
-
-
-  
-  
-<!-- End Page Content -->
+      We examine techniques to delay the collapse of unsustainable fixed exchange rates caused by excessive domestic credit growth. Capital controls, combined with free trade, postpone the collapse, resulting in a trade deficit and consumption boom. Real interest rates rise above international levels, and reserves depletion triggers anticipated devaluation. Delaying monetization while maintaining fiscal policy prolongs low inflation, but leads to higher inflation later. Introducing import restrictions alongside capital controls sustains the fixed exchange rate but misallocates resources, creating a wedge between domestic and international prices. This wedge, worsened by excessive money supply expansion, leads to no exports.
+    </h5>
+    <br>
+    <h3 class="w3-wide w3-text-blue-grey">Publications</h3>
+    <h4>"<u><a href="https://doi.org/10.31389/eco.450" target="_blank">What Works for Active Labor Market Policies? A Meta-Analysis of RCT Findings</a></u>" <br> with E. Levy Yeyati, M. Montané, and L. Sartorio</h4>
+    <br>
+    <h3 class="w3-wide w3-text-blue-grey">Other work</h3>
+    <h4>"<u><a href="https://www.dropbox.com/scl/fi/h9lumfpa14nuanfvsabtz/GaunaJudzikYeyati2021_ICL.pdf?rlkey=fo0iymgpz4ds2o1436io7e4mf&amp;raw=1" target="_blank">Labor conflict and sectoral wage setting in Argentina</a></u>"<br> with Dario Judzik and Eduardo Levy Yeyati</h4>
+    <h4>"<u><a href="https://www.dropbox.com/scl/fi/g7grh2tdltycjw9b10y5s/A-Rent-Seeking-Coalition-and-Efficiency-Losses.pdf?rlkey=urio3ynsbql23e1c69lsuel22&amp;raw=1" target="_blank">A Rent-Seeking Coalition and Efficiency Losses</a></u>" (Undergraduate thesis)</h4>
+  </section>
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" style="margin-top: auto;">
-    <button class="w3-button" onclick="window.open('https://twitter.com/fongauna', '_blank')" title="X (formerly Twitter)" aria-label="X (formerly Twitter)">
-    <svg class="w3-hover-opacity" style="width:24px;height:24px;vertical-align:middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-      <path d="M461.5 32h-83.7L256 214.4 134.2 32H50l176.4 251L50 480h83.7l121.8-174.7L377.8 480H462L285.6 229.2 461.5 32z"/>
-    </svg>
-  </button>
-  <button class="w3-button" onclick="window.open('https://github.com/AlfonsoGauna', '_blank')" title="GitHub" aria-label="GitHub"><i class="fa fa-github w3-hover-opacity"></i>
-  <button class="w3-button" onclick="window.open('https://linkedin.com/in/alfonsogauna', '_blank')" title="LinkedIn" aria-label="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i>
+<a aria-label="Home" class="fab-home" href="index.html" title="Home"><i class="fa fa-home"></i></a>
+
+<footer class="w3-container w3-padding-32 w3-center w3-opacity" style="margin-top:auto; background-color: rgb(246, 248, 250);">
+  <div class="footer-icons">
+    <button class="icon-btn" onclick="window.open('https://github.com/AlfonsoGauna','_blank')" title="GitHub" aria-label="GitHub">
+      <i class="fa fa-github"></i>
+    </button>
+    <button class="icon-btn" onclick="window.open('https://twitter.com/fongauna','_blank')" title="X (formerly Twitter)" aria-label="X (formerly Twitter)">
+      <svg style="width:18px;height:18px;vertical-align:middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M461.5 32h-83.7L256 214.4 134.2 32H50l176.4 251L50 480h83.7l121.8-174.7L377.8 480H462L285.6 229.2 461.5 32z"/>
+      </svg>
+    </button>
+    <button class="icon-btn" onclick="window.open('https://linkedin.com/in/alfonsogauna','_blank')" title="LinkedIn" aria-label="LinkedIn">
+      <i class="fa fa-linkedin"></i>
+    </button>
+  </div>
+  <div class="w3-small w3-margin-top" style="color:var(--muted)">
+    © <span id="yr"></span> Alfonso Gauna
+  </div>
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
+<!-- Backlink for SEO -->
+<p style="display: none;">
+  <a href="https://economics.uchicago.edu/directory/alfonso-gauna" target="_blank">
+    University of Chicago Directory
+  </a>
+</p>
 </body>
 </html>

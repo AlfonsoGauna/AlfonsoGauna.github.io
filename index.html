@@ -4,7 +4,7 @@
   <title>Alfonso Gauna</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alfonso Gauna — Economics PhD Student at UChicago, specializing in macroeconomic theory, finance, and international economics.">
+  <meta name="description" content="Alfonso Gauna — Economics PhD Student at UChicago.">
 <meta name="google-site-verification" content="gSOr0C-Vx2_RcFKktV5XMSiMes6ZDpHd-zWEfqfjSDY" />
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
@@ -48,13 +48,13 @@
       background: #fff; color: var(--txt); text-decoration: none;
       transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
     }
-    .btn:hover { transform: translateY(-1px); border-color: var(--brand-2); box-shadow: 0 6px 18px rgba(31,111,235,0.1); }
+    .btn:hover { transform: translateY(-1px); border-color: rgb(89, 113, 127); color: rgb(89, 113, 127); box-shadow: 0 6px 18px rgba(31,111,235,0.1); }
     .footer-icons { display: inline-flex; gap: 10px; align-items: center; }
     .icon-btn{
       width: 38px; height: 38px; border-radius: 50%; display: inline-grid; place-items: center;
       background: #fff; border: 1px solid #e5e7eb; transition: transform .12s, box-shadow .12s, border-color .12s;
     }
-    .icon-btn:hover{ transform: translateY(-1px); border-color: var(--brand-2); box-shadow: 0 6px 18px rgba(31,111,235,0.12); }
+    .icon-btn:hover{ transform: translateY(-1px); border-color: rgb(89, 113, 127); box-shadow: 0 6px 18px rgba(31,111,235,0.12); }
     a:hover { color: var(--brand-2); text-decoration: underline; }
   </style>
 </head>
@@ -66,8 +66,8 @@
     <section class="hero w3-animate-opacity">
       <h1 class="w3-wide w3-text-blue-grey">Alfonso Gauna</h1>
       <h4 class="w3-justify">
-        <p>I am an Economics PhD Student in The Kenneth C. Griffin Department of Economics at The University of Chicago. I earned a BA and MA, both in Economics, from Universidad Torcuato di Tella.</p>
-        <p>My research interests lie in the intersection of Macroeconomic Theory, Finance, and International Economics. I have been working on topics related to small open economies, the role of expectations in macroeconomics, labor issues, and sovereign debt in Latin American countries.</p>
+        <p>I am a Economics PhD Student in The Kenneth C. Griffin Department of Economics at The University of Chicago. I earned a BA and MA, both in Economics, from Universidad Torcuato di Tella.</p>
+        <p>My research interests lie in the intersection of Macroeconomic Theory, Finance, and International Economy. I have been working on topics related to small open economies, the role of expectations in macroeconomics, labor issues, and sovereign debt in Latin American countries.</p>
       </h4>
 
       <div class="btn-row">
@@ -118,6 +118,8 @@
 
 <script>
 
+
+
 // Carousel
 var myIndex = 0;
 carousel();
@@ -132,6 +134,19 @@ function carousel() {
   setTimeout(carousel, 2500);
 }
 
+
+// Mobile menu
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; }
+  else { x.className = x.className.replace(" w3-show", ""); }
+}
+
+// Close modal if present
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) { modal.style.display = "none"; }
+}
 </script>
 <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
 

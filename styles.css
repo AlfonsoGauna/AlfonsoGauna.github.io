@@ -289,10 +289,18 @@ img {
   font-size: 16px;
 }
 
+.paper-meta {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .paper-abstract {
   margin: 14px 0 0;
   font-size: 16px;
   line-height: 1.65;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .paper-abstract-label {
@@ -469,6 +477,10 @@ img {
     font-size: 15px;
   }
 
+  .paper-meta {
+    font-size: 14px;
+  }
+
   .btn-row {
     gap: 10px;
   }
@@ -502,6 +514,10 @@ img {
   .hero {
     padding-right: 18px;
     padding-left: 18px;
+  }
+
+  .carousel-image {
+    width: min(74%, 360px);
   }
 
   .btn-row {

@@ -230,6 +230,10 @@ img {
   margin-bottom: 6px;
 }
 
+.research-title {
+  text-wrap: balance;
+}
+
 .research-intro {
   margin: 0;
   color: var(--muted);
@@ -474,6 +478,14 @@ img {
 }
 
 @media (max-width: 540px) {
+  .research-title-separator {
+    display: none;
+  }
+
+  .research-title-topic {
+    display: block;
+  }
+
   .main-wrap {
     padding-right: 10px;
     padding-left: 10px;

@@ -478,6 +478,10 @@ img {
 }
 
 @media (max-width: 540px) {
+  .research-intro {
+    display: none;
+  }
+
   .research-title-separator {
     display: none;
   }
